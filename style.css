@@ -1,0 +1,302 @@
+/*-------------- Google fonts ---------------*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=PT+Serif:wght@400;700&display=swap');
+
+:root {
+    /*-------- font-family --------*/
+    --heading-font: 'PT Serif', serif;
+    --para-font: 'Outfit', sans-serif;
+
+    /*-------- Colors ----------*/
+    --primary-color: #dd9d4c;
+    /*-- Light brown color ---*/
+    --secondary-color: #2d3436;
+    /*-- light black color --*/
+    --body-color: #f6f1ed;
+    /*-- Extra light pink color --*/
+    --white-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.heading {
+    font-size: 8.5vw;
+    font-family: var(--heading-font);
+    margin-bottom: 10px;
+}
+
+.para-line {
+    color: var(--secondary-color);
+    font-size: 5.5vw;
+    font-weight: 300;
+    font-family: var(--para-font);
+}
+
+.btn {
+    color: #ffffff;
+    /* background-color: var(--primary-color); */
+    background-color: #2e1f1b;
+    font-family: var(--para-font);
+    font-size: 1.3rem;
+    border: 1px solid #CCC;
+    outline: none;
+    padding: .7rem 3.2rem;
+    width: max-content;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translate(10px);
+}
+
+/*----------- Header styling start ------------*/
+.header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.451), rgba(7, 4, 0, 0.029)), url(img/headerbg.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.header .containerr {
+    padding: 2rem 1rem;
+}
+
+.logo {
+    color: var(--white-color);
+    font-size: 1rem;
+    font-family: var(--para-font);
+    font-weight: 600;
+}
+
+.hero-content {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hero-content .main-heading {
+    color: var(--white-color);
+    font-size: 13vw;
+    font-weight: 300;
+    line-height: 1;
+    font-family: var(--heading-font);
+    margin-bottom: 2.8rem;
+}
+
+
+
+select {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-family: var(--para-font);
+    border: 1px solid #ccc;
+}
+
+option {
+    color: black;
+}
+
+
+
+/*----------- Header styling ends ------------*/
+
+
+/*------------ Crafted section styling start --------------*/
+.none {
+    display: none;
+}
+
+.craft {
+    /* background: linear-gradient(to right, #eacda3, #d6ae7b); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(7, 4, 0, 0.2)), url(img/contentbg.jpg);
+    color: var(--white-color);
+}
+
+.content {
+    height: 100vh;
+    margin-top: -200px;
+}
+
+#head1 {
+    margin-bottom: 50px;
+}
+
+.craft .containerr {
+    padding: 3rem 1rem;
+}
+
+.craft .containerr .row {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+
+.active {
+    width: fit-content;
+    height: 350px;
+}
+
+.active img {
+    width: 100%;
+    height: auto;
+    border: 5px solid #867467;
+}
+
+/*------------ Crafted section styling end --------------*/
+
+
+/*------------ Footer section styling start ----------*/
+.footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(7, 4, 0, 0.2)), url(img/footerbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .containerr {
+    padding: 6rem 1rem;
+}
+
+.footer .containerr .heading {
+    color: #fff;
+}
+
+.footer .containerr .row {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer .containerr .row .col {
+    width: 100%;
+}
+
+.footer-heading {
+    color: #fff;
+    font-size: 6vw;
+    font-family: var(--heading-font);
+}
+
+.white {
+    color: #ffffff;
+}
+
+/*------------ Footer section styling end ----------*/
+
+
+
+
+
+/*----------------------------------------------------------*/
+/*-------------------- Desktop size styling ----------------*/
+/*----------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+    .heading {
+        font-size: 3.6vw;
+    }
+
+    .para-line {
+        font-size: 1.6vw;
+        font-weight: 300;
+        font-family: var(--para-font);
+    }
+
+    /*------ header styling start -------*/
+    .header .containerr {
+        padding: 4.5rem 6rem;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+        line-height: 0.9;
+    }
+
+    .hero-content .main-heading {
+        font-size: 7vw;
+    }
+
+    /*------ header styling end -------*/
+
+
+    /*------ craft styling start -------*/
+    .craft {
+        height: 100vh;
+    }
+
+    .craft .containerr {
+        padding: 5rem;
+    }
+
+    .craft .containerr .row {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5.5rem;
+    }
+
+    .craft .containerr .row .col {
+        width: 100%;
+    }
+
+    /*------ craft styling end -------*/
+
+
+
+
+    /*------ Footer styling start ---------- */
+    .footer {
+        height: 100vh;
+        background-position: center center;
+    }
+
+    .footer .containerr {
+        padding: 5rem;
+        width: 100%;
+    }
+
+    .footer .containerr .row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-heading {
+        font-size: 1.2vw;
+    }
+
+    .white {
+        font-size: 1.5vw;
+    }
+
+    /*------ Footer styling end ---------- */
+}
